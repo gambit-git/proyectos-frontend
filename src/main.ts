@@ -10,8 +10,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
       <p>
         En este curso espero aprender a desarrollar aplicaciones frontend
-        modernas, mejorar mis conocimientos de TypeScript y conocer herramientas
-        como Vite, Git y GitHub para crear y gestionar proyectos de software.
+        modernas y aprender sobre TypeScript, deseo poder desarrollar un proyecto el cual
+        sea base para poder entender y aplicar mis conocimientos a mi proyecto de grado,
+        conocer herramientas como Vite, Git y GitHub para crear y gestionar proyectos de software.
       </p>
     </section>
   </main>
