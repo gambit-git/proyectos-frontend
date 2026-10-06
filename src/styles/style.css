@@ -1,0 +1,131 @@
+* { 
+  box-sizing: border-box; 
+}
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #181818;
+  background: #f4f4f4;
+}
+
+body { 
+  margin: 0; 
+  min-width: 320px; 
+  min-height: 100vh; 
+}
+
+button, input { 
+  font: inherit; 
+}
+
+.app-shell {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero { 
+  margin-bottom: 1.5rem; 
+}
+
+.hero h1 { 
+  margin: 0.25rem 0; 
+  font-size: clamp(2rem, 6vw, 4rem); 
+}
+
+.eyebrow { 
+  margin: 0; 
+  font-weight: 700; 
+  text-transform: uppercase; 
+}
+
+.search-form {
+  padding: 1rem;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+}
+
+.search-form label { 
+  display: block; 
+  margin-bottom: 0.5rem; 
+}
+
+.search-row { 
+  display: flex; 
+  gap: 0.5rem; 
+}
+
+.search-row input { 
+  flex: 1; 
+  min-width: 0; 
+  padding: 0.75rem; 
+}
+
+.search-row button { 
+  padding: 0.75rem 1.25rem; 
+  cursor: pointer; 
+}
+
+.status { 
+  min-height: 1.5rem; 
+  font-weight: 700; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gif-card {
+  overflow: hidden;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+.gif-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.gif-card__content { 
+  padding: 1rem; 
+}
+
+.gif-card h2 { 
+  margin: 0 0 0.5rem; 
+  font-size: 1.1rem; 
+}
+
+.gif-card .description {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.tags { 
+  color: #555; 
+  font-size: 0.85rem;
+}
+
+.empty-state { 
+  grid-column: 1 / -1; 
+  padding: 2rem; 
+  text-align: center; 
+  background: #fff; 
+}
+
+@media (max-width: 540px) {
+  .search-row { 
+    flex-direction: column; 
+  }
+}
+/* EC1 F3 A4: se conservan los estilos anteriores. */
+.status--loading { font-weight: 700; }
+.status--error { color: #7a1212; font-weight: 700; }
+.giphy-attribution { margin-top: 2rem; text-align: center; }
+.giphy-attribution a { color: inherit; font-weight: 700; }
+.giphy-attribution img { display: inline-block; width: min(180px, 100%); height: auto; }
