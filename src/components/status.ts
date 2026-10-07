@@ -15,11 +15,11 @@ export function renderStatus(
 
   switch (currentStatus) {
     case RequestStatus.Initial:
-      container.textContent = `${initialLabel} Escribe una búsqueda o selecciona un GIF.`;
+      container.textContent = `${initialLabel} Preparando la consulta.`;
       break;
 
     case RequestStatus.Loading:
-      container.textContent = 'Buscando contenido...';
+      container.textContent = 'Consultando GIPHY...';
       break;
 
     case RequestStatus.Success:
@@ -33,7 +33,7 @@ export function renderStatus(
 
     case RequestStatus.Error:
       container.textContent =
-        'No fue posible mostrar la información.';
+        'No fue posible consultar GIPHY. Intenta buscar de nuevo.';
       break;
   }
 }
